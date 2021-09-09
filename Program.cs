@@ -28,7 +28,7 @@ namespace PhotoBook
 
     public class PhotoBook
     {
-        private int numPages { get; set; }
+        protected int numPages { get; set; }
 
         public PhotoBook()
         {
@@ -48,16 +48,9 @@ namespace PhotoBook
 
     public class BigPhotoBook : PhotoBook
     {
-        private int numPages { get; set; }
-
         public BigPhotoBook()
         {
             numPages = 64;
-        }
-
-        public new int GetNumberPages()
-        {
-            return numPages;
         }
     }
 }
